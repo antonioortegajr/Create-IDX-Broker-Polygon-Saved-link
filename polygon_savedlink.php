@@ -5,7 +5,7 @@ $url = 'https://api.idxbroker.com/clients/savedlinks';
 $data = array(
     'linkName'=>'polygon_test123456', // the link's url
     'pageTitle'=>'test123456', // the title tag
-    'linkTitle'=>'polygon_test1234456', 'queryString'=>array('pgon'=>'44.69770131016885+-123.41671952046453,44.16225789428327+-124.16104325093329,43.56024232423529+-123.38376053608953,43.80257093351484+-122.01596268452703,44.51193134659297+-122.25766190327704,44.69770131016885+-123.41671952046453','radius'=>'', 'layerType'=>'polygon','clat'=>'44.135244','clng'=>'-123.064591','zoom'=>9,'idxID'=>'YOURMLS','pt'=>1,'srt'=>'prd')
+    'linkTitle'=>'polygon_test1234456', 'queryString'=>array('pgon'=>'44.69770131016885 -123.41671952046453,44.16225789428327 -124.16104325093329,43.56024232423529 -123.38376053608953,43.80257093351484 -122.01596268452703,44.51193134659297 -122.25766190327704,44.69770131016885 -123.41671952046453','radius'=>'', 'layerType'=>'polygon','clat'=>'44.135244','clng'=>'-123.064591','zoom'=>9,'idxID'=>'YOURMLS','pt'=>1,'srt'=>'prd')
 
 );
 $data = http_build_query($data); // encode and & delineate
