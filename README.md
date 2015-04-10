@@ -6,7 +6,7 @@ These can be created in an IDX Broker account and pulled via an API GET call for
 
 In the url string that contains the lat and long points do not include the plus signs as this appears to cause an encoding issue.
 
-There is a limit to the amount of characters allowed. The max length that is allowed is 512 for the pgon parameter. The more complicated the polygon the longer the urls string will be. Adding additional filers will make this string even longer. Should you reach the limit a URL can handle the savedlink may not function correctly. Simpler shapes are best. Complex shapes should be efficient in the amount of points used.
+There is a limit to the amount of characters allowed. The max length that is allowed is 512 for the pgon parameter. The more complicated the polygon the longer the urls string will be. Adding additional filters will make this string even longer. Should you reach the limit a URL can handle the savedlink may not function correctly. Simpler shapes are best. Complex shapes should be efficient in the amount of points used.
 
 When saved links are called the query string is returned with plus signs which will probably get encoded as %2b and commas that will likely be encoded as %252C. Sending this plus sign encoding in a PUT call will not work. Nor will sending a plus sign like +. The API will accept it and return 200, but the polygon overlay will not be created in the IDX Broker system. Instead use an empty space. The commas do not appear to make a difference and are accepted either way.
 
