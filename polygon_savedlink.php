@@ -42,6 +42,4 @@ if ($code >= 200 || $code < 300)
 else
     $error = $code;
 
-    echo $code;
-
     ?>
