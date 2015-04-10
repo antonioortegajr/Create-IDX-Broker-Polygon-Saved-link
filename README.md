@@ -1,6 +1,5 @@
-# IDX Broker Polygon saved link API PUT
-------
-
+<h1>IDX Broker Polygon saved link API PUT</h1>
+-----
 Creation of a polygon saved link requires latitude and longitude points.
 
 These can be created in an IDX Broker account and pulled via an API GET call for savedlinks.
@@ -22,6 +21,6 @@ Example that also doesn't work:
 
 This method is not availabe in API version 1.0.4 as such in my php example in this repo, I specify the API version in the request header. This will ensure that this call will work even if any clients that have API 1.0.4 version set in their IDX Broker account.
 
-
+This information would also apply to the POST method as well.
 
 *Standard Disclaimer: This code is not official IDX Broker code. It does use their API, but in NO WAY is it supported by IDX Broker. DO NOT contact IDX Broker for any support of this code.*
