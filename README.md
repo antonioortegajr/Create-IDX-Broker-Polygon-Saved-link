@@ -1,4 +1,4 @@
-# IDXBroker Polygon saved link API PUT
+# IDX Broker Polygon saved link API PUT
 
 
 Creation of a polygon saved link requires latitude and longitude points.
