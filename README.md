@@ -1,4 +1,4 @@
-#H1 IDX Broker Polygon saved link API PUT
+# IDX Broker Polygon saved link API PUT
 ------
 
 Creation of a polygon saved link requires latitude and longitude points.
@@ -20,7 +20,7 @@ Example that also doesn't work:
 **Example that will work**:
 `"queryString":"pgon=44.0811730583207 -123.09107780456544%252C44.07143046636492 -123.11905860900879%252C44.04774558163617 -123.1032657623291%252C44.0811730583207 -123.09107780456544&radius=&layerType=polygon&clat=42.25291778330197&clng=-88.35754394&zoom=13&idxID=a001&pt=1"`
 
-
+This method is not availabe in API version 1.0.4 as such in my php example in this repo, I specify the API version in the request header. This will ensure that this call will work even if any clients that have API 1.0.4 version set in their IDX Broker account.
 
 
 
