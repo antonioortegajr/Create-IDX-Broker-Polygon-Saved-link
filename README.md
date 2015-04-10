@@ -1,5 +1,5 @@
 #H1 IDX Broker Polygon saved link API PUT
-======
+------
 
 Creation of a polygon saved link requires latitude and longitude points.
 
@@ -12,7 +12,7 @@ There is a limit to the amount of characters allowed. The max length that is all
 When saved links are called the query string is returned with plus signs which will probably get encoded as %2b and commas that will likely be encoded as %252C. Sending this plus sign encoding in a PUT call will not work. Nor will sending a plus sign like +. Instead use an empty space. The commas do not appear to make a difference and are accepted either way.
 
 Example that doesn't work:
-"queryString":"pgon=44.0811730583207%2B-123.09107780456544%252C44.07143046636492%2B-123.11905860900879%252C44.04774558163617%2B-123.1032657623291%252C44.0811730583207%2B-123.09107780456544&radius=&layerType=polygon&clat=42.25291778330197&clng=-88.35754394&zoom=13&idxID=a001&pt=1"
+`"queryString":"pgon=44.0811730583207%2B-123.09107780456544%252C44.07143046636492%2B-123.11905860900879%252C44.04774558163617%2B-123.1032657623291%252C44.0811730583207%2B-123.09107780456544&radius=&layerType=polygon&clat=42.25291778330197&clng=-88.35754394&zoom=13&idxID=a001&pt=1"`
 
 Example that will work:
 "queryString":"pgon=44.0811730583207 -123.09107780456544%252C44.07143046636492 -123.11905860900879%252C44.04774558163617 -123.1032657623291%252C44.0811730583207 -123.09107780456544&radius=&layerType=polygon&clat=42.25291778330197&clng=-88.35754394&zoom=13&idxID=a001&pt=1"
