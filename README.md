@@ -6,7 +6,7 @@ Creation of a polygon saved link requires latitude and longitude points.
 
 These can be created in an IDX Broker account and pulled via an API GET call for savedlinks. If you already have lats and longs you could just use those too.
 
-In the url string that contains the lat and long points do not include the plus signs as this appears to cause an encoding issue.
+In the url string that contains the lat and long points do not include the plus signs as this appears to cause an encoding issue. Instead use an empty space.
 
 There is a limit to the amount of characters allowed. The max length that is allowed is 512 for the pgon parameter. The more complicated the polygon the longer the urls string will be. Adding additional filters will make this string even longer. Should you reach the limit a URL can handle, the savedlink may not function correctly. Simpler shapes are best. Shapes should be efficient in the amount of points used. Polygons lines should not intersect.
 
